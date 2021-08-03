@@ -242,7 +242,7 @@ a:focus {
   display: flex;
   position: relative;
 }
-.work-item  {
+.work-item {
   display: flex;
   justify-content: center;
   font-weight: bold;
@@ -373,11 +373,12 @@ a:focus {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  transition-property: border;
+  transition-property: border-color;
 }
 .client-card:hover,
 .client-card:focus {
-  border: 1px solid var(--secondary-color);
+  border-color: var(--secondary-color);
+  cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -386,8 +387,8 @@ a:focus {
   transition-property: fill;
 }
 
-.icon-logo:hover,
-.icon-logo:focus {
+.client-card:hover > .icon-logo,
+.client-card:focus > .icon-logo {
   fill: var(--secondary-color);
   cursor: pointer;
   transition-duration: 250ms;
@@ -400,7 +401,7 @@ button {
   cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition-property: color, background-color;
+  transition-property: color, background-color;
 }
 
 button:focus,
