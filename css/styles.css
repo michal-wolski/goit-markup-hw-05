@@ -34,6 +34,9 @@ p {
 img {
   display: block;
 }
+button {
+  cursor: pointer;
+}
 .list {
   list-style: none;
 }
@@ -395,7 +398,7 @@ a:focus {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* === END OUR CLIENTS=== */
-button {
+/* button {
   background-color: #f5f4fa;
   border-radius: 4px;
   cursor: pointer;
@@ -410,7 +413,7 @@ button:hover {
   color: #ffffff;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+}  */
 /* === PORTFOLIO === */
 
 .filters {
@@ -590,3 +593,46 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* === FOOTER === */
+/* === BACKDROP === */
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--third-color);
+  width: 528px;
+  min-height: 581px;
+}
+.modal-btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  top: 8px;
+  right: 8px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal-btn svg {
+}
+/* .modal-close {
+  position: absolute;
+height: 18px;
+width: 18px;
+} */
+/* === END BACKDROP === */
