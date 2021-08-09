@@ -1,6 +1,4 @@
 body {
-  width: 1600px;
-  height: 1880px;
   background: #ffffff;
   color: #212121;
   font-family: "Roboto", "Raleway", sans-serif;
@@ -497,7 +495,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.discription {
+.description {
   padding: 20px 24px 20px 24px;
   border: 1px solid #eeeeee;
   display: flex;
