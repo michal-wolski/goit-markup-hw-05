@@ -463,16 +463,43 @@ button:hover {
   gap: 30px;
 }
 
-.portfolio-list .item {
-  width: 370px;
-  height: 404px;
+.portfolio-item {
   background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-item:hover,
+.portfolio-item:focus{
+  box-sizing: border-box;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-img {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  background-color: rgba(33, 150, 243, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  padding: 49px 45px 49px 24px ;
+  color: var(--third-color);
+  font-size: 18px;
+  line-height: 1.555;
+  letter-spacing: 0.03em;
+}
+.portfolio-item:hover .overlay,
+.portfolio-item:focus .overlay,
+.portfolio-item:hover .overlay,
+.portfolio-item:focus .overlay {
+  transform: translateY(0);
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .discription {
   padding: 20px 24px 20px 24px;
+  border: 1px solid #eeeeee;
   display: flex;
   flex-direction: column;
   justify-content: center;
